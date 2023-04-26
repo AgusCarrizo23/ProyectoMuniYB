@@ -1,20 +1,15 @@
-import React from 'react'
-import List from './componentes/taskList'
-import { ChakraProvider } from '@chakra-ui/react'
-
-import './App.css'
+import React, { useState } from 'react';
+import TodoList from './componentes/todoList/index'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
  
 
+ 
+
   return (
-    <ChakraProvider>
-    <List></List>
-
-
-    
-    </ChakraProvider>
-  )
+   <TodoList></TodoList>
+  );
 }
 
-export default App
+export default App;
